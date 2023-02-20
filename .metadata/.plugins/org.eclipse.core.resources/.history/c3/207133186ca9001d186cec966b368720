@@ -1,0 +1,92 @@
+package employee;
+
+public class Employee {
+	private int id,age;
+	private  fName,salary, lName,City, Gender,Doj,Country,Department;
+	
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id=id;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age=age;
+	}
+	public  getSalary() {
+		return salary;
+	}
+	public void setSalary( salary) {
+		this.salary=salary;
+	}
+	public  getLName() {
+		return lName;
+	}
+	public void setLName( lName) {
+		this.lName=lName;
+	}
+	public  getFName() {
+		return fName;
+	}
+	public void setFName( fName) {
+		this.fName=fName;
+	}
+	public  getCity() {
+		return City;
+	}
+	public void setCity( City) {
+		this.City=City;
+	}
+	public  getGender() {
+		return Gender;
+	}
+	public void setGender( Gender) {
+		this.Gender=Gender;
+	}
+	public  getDoj() {
+		return Doj;
+	}
+	public void setDoj( Doj) {
+		this.Doj=Doj;
+	}
+	public  getCountry() {
+		return Country;
+	}
+	public void setCountry( Country) {
+		this.Country=Country;
+	}
+	/*public  getDepartment() {
+		return Department;
+	}
+	public void setDepartment( Department) {
+		this.Department=Department;
+	}*/
+	public Employee() {
+		
+	}
+	public Employee( fName,  lName,  City,  Gender, Doj, Country
+			, int id, int age,  salary) {
+		this.id=id;
+		this.age=age;
+		this.salary=salary;
+		this.fName=fName;
+		this.lName=lName;
+		this.City=City;
+		this.Gender=Gender;
+
+		this.Doj=Doj;
+
+		this.Country=Country;
+		//this.Department=Department;
+
+	}
+	public static void main([] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

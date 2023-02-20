@@ -1,0 +1,15 @@
+package papu;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionProvider {
+	public static Connection getCon() throws ClassNotFoundException,SQLException {
+		
+		Connection Nilesh = null;
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		con=DriverManager.getCon("jdbc:mysql://localhost:3306/employee","root","12346789");
+		return con;
+		
+	}
+}

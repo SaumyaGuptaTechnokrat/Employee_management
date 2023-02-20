@@ -1,0 +1,16 @@
+package do_practice;
+
+public class filter {
+
+	public static void main(String[] args) {
+		try {
+			main(args);
+
+		}
+		catch(StackOverflowError sove){
+			sove.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+package employee;
+
+import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import employee.Employee;
+
+public class EmployeeDAO {
+	public static int save(Employee e) throws ClassNotFoundException, SQLException {
+		Connection con = ConnectionProvider.getConnection();
+		//Statement s = con.createStatement();
+		PreparedStatement ps= con.prepareStatement("insert into `Employee_table`(fName, lName, age, Gender, salary, Doj,City, Country) values(?,?,?,?,?,?,?,?);"
+				+ "");
+		ps.setString(1, e.getFName());
+		
+		ps.setString(2, e.getLName());
+		ps.setInt(3, e.getAge());
+		ps.setString(4, e.getGender());
+		ps.setString(5, e.getSalary());
+		ps.setString(6, e.getDoj());
+		ps.setString(7,e.getCity());
+		ps.setString(8,e.getCountry());
+
+		int status = ps.executeUpdate();
+		return status;
+	}
+	public static List<Employee> getDetails() throws ClassNotFoundException, SQLException{
+		List<Employee> lem=new ArrayList<Employee>();
+
+		Connection con = ConnectionProvider.getConnection();
+		Statement stmt= con.createStatement();
+		ResultSet rs= stmt.executeQuery("select * from Employee");
+		while(rs.next()) {
+			Employee e=new Employee();
+			e.setId(rs.getInt("emp_id"));
+			e.setAge(rs.getInt("age"));
+			e.setFName(rs.getString("fName"));
+			e.setLName(rs.getString("lName"));
+			e.setSalary(rs.getString("salary"));
+			e.setDoj(rs.getString("Doj"));
+			e.setCity(rs.getString("City"));
+			e.setCountry(rs.getString("Country"));
+			e.setGender(rs.getString("gender"));
+			lem.add(e);
+		}
+				return lem;
+		
+	}
+
+
+}

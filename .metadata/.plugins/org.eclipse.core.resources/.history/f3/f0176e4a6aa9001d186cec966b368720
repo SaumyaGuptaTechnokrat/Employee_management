@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Mystyle.css">
+</head>
+<body>
+<h1>Employee Management App</h1>
+<div class="form_container">
+<form action="addRecord.jsp" method="post" >
+	
+		<p>First Name:</p><input name="fName" type="text">
+		<p>Last Name:</p><input name="lName" type="text">
+		<p>Age:</p><input name="age" type="number">
+		<p>Gender:</p><input name="Gender" type="radio" value="Male">M
+		<input type="radio" name="Gender" value="Female">F	
+		<p>Salary:</p><input name="salary" type="text">
+		<p>DOJ:</p><input name="Doj" placeholder="YYYY-MM-DD" type="text">
+		<p>City:</p><input name="City" type="text">
+		<p>Country:</p>
+		<select name="Country">
+		<option value="US">US<option/>
+		<option value="US">INDIA<option/>
+		<option value="US">UK<option/>
+		<option value="US">JAPAN<option/>
+		</select>
+		<br>
+		<input type="button" id="Submit" value="Submit">
+</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+package do_practice;
+
+public class URL_Length {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

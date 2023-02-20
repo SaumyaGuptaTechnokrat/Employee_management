@@ -1,0 +1,27 @@
+package employee;
+
+public class Employee {
+	private int id,age, salary;
+	private String fName, lName,City, Gender,doj,country,depaartment;
+	public Employee() {
+		
+	}
+
+	public int getId() {
+		return age;
+	}
+	public void setId(int id) {
+		this.id=id;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age=age;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

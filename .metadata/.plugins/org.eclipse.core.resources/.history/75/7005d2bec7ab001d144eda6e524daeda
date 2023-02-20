@@ -1,0 +1,12 @@
+package do_practice;
+
+public class filter {
+
+	public  void main(String[] args) {
+		filter f = new filter();
+		f.main(args);
+		
+		// TODO Auto-generated method stub
+	}
+
+}

@@ -1,0 +1,24 @@
+<%@ page language="java" import="" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+
+ fName=request.getParameter("fName");
+ lName=request.getParameter("lName");
+int age=request.getParameter("age");
+ Gender=request.getParameter("Gender");
+ salary=request.getParameter("salary");
+ Doj=request.getParameter("Doj");
+ City=request.getParameter("City");
+ Country=request.getParameter("Country");
+Employee e = new Employee( fName,  lName,  City,  Gender, Doj, Country
+		, int id, int age,  salary);
+%>
+</body>
+</html>
